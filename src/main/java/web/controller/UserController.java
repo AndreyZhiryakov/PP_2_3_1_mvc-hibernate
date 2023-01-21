@@ -42,7 +42,7 @@ import web.service.UserService;
             return "edit";
         }
 
-        @PatchMapping("/edit{id}")
+        @PatchMapping("/edit/{id}")
         public String updateUser (@ModelAttribute("user") User user,@PathVariable("id")int id){
             userService.updateUser(id,user);
             return "redirect:/users";

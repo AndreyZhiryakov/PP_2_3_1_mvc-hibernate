@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cars list</title>
+  <title>Users</title>
 </head>
 <body>
 <table class ="table table-dark">
@@ -23,7 +23,13 @@
 
 </table>
 
+<br/>
+<hr/>
+<form th:method="GET" th:action="@{/new}">
 
+  <input type="submit" value="Create new user"/>
+
+</form>
 
 </div>
 </body>
